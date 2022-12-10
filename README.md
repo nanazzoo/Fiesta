@@ -14,17 +14,14 @@
 ## 2. 사용 기술
 #### `Back-end`
   - Java 11
-  - Spring(3.9.18)
+  - Spring 3.9.18
   - Maven
-  - Spring Data JPA
-  - QueryDSL
-  - H2
-  - MySQL 5.7
+  - Oracle
   - Spring Security
-  - Jsoup
 #### `Front-end`
-  - Vue.js 3.0
-  - Element UI
+  - Html
+  - CSS
+  - Javascript
 
 </br>
 
