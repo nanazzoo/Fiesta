@@ -27,7 +27,7 @@
 
 ## 3. ERD 설계
 <img src="ERD.png"></img>
-<img src="usecase.png"></img>
+<img src="usecase.jpg"></img>
 
 
 ## 5. 핵심 트러블 슈팅
