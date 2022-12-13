@@ -26,7 +26,7 @@
 </br>
 
 ## 3. ERD 설계
-![]<img src="Fiesta/Copy of SNS 프로젝트.png"></img>
+![]<img src="Copy of SNS 프로젝트.png"></img>
 
 
 ## 5. 핵심 트러블 슈팅
