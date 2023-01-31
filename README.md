@@ -15,7 +15,7 @@
 
 ## 2. 사용 기술
 #### `Back-end`
-  -  <img src="https://img.shields.io/badge/Java11-3178C6?style=flat&logo=TypeScript&logoColor=white"/>
+  -  <img src="https://img.shields.io/badge/Java11-3178C6?style=flat&logo=Java&logoColor=white"/>
   - `Spring 5.3.14`
   - `Apache Maven`
   - `Apache Tomcat 9.0`
