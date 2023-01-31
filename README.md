@@ -1,5 +1,5 @@
 # :pushpin: [Fiesta](http://146.56.188.235:8080/)
->SNS(Instagram) 클론 프로젝트
+>SNS(Instagram)을 벤치마킹하여 Fiesta만의 고유의 색을 담은 SNS 페이지로 재
 >
 >[Fiesta Demo 바로가기](http://146.56.188.235:8080/)
 
