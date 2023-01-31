@@ -13,10 +13,13 @@
 
 </br></br>
 
+<div align="center">
+  
 ## 2. 사용 기술
 #### `Back-end`
-  -  <img src="https://img.shields.io/badge/java11-007396?style=flat&logo=java&logoColor=white"> 
-  - `Spring 5.3.14`
+    <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+    <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"> 
+    <img src="https://img.shields.io/badge/spring 5.3.14 -6DB33F?style=for-the-badge&logo=spring&logoColor=white"> 
   - `Apache Maven`
   - `Apache Tomcat 9.0`
   - `Oracle 21C`
@@ -26,6 +29,7 @@
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
 
+</div>
 
 </br></br>
 
