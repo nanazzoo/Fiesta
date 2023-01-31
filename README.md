@@ -22,7 +22,7 @@
   - `Oracle 21C`
   - `Spring Security`
 #### `Front-end`
-  - `HTML.CSS`
+  - `HTML/CSS`
   - `Javascript`
 
 
