@@ -200,7 +200,7 @@ public Page<Post> findAllByTagName(String tagName, Pageable pageable) {
 
 ## 6. 그 외 트러블 슈팅
 <details>
-<summary>npm run dev 실행 오류</summary>
+<summary>추천멤버 선택 방식</summary>
 <div markdown="1">
 
 - Webpack-dev-server 버전을 3.0.0으로 다운그레이드로 해결
