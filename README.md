@@ -211,7 +211,7 @@ public Page<Post> findAllByTagName(String tagName, Pageable pageable) {
 
 ## 6. 그 외 트러블 슈팅
 
-[추천 멤버 선정 기준 ](https://github.com/FiestaUpdate/Fiesta/blob/main/troubleshooting/%EC%B6%94%EC%B2%9C%20%EB%A9%A4%EB%B2%84%20%EC%84%A0%EC%A0%95%20%EA%B8%B0%EC%A4%80.md)
+[추천 멤버 선정 기준 수정](https://github.com/FiestaUpdate/Fiesta/blob/main/troubleshooting/%EC%B6%94%EC%B2%9C%20%EB%A9%A4%EB%B2%84%20%EC%84%A0%EC%A0%95%20%EA%B8%B0%EC%A4%80.md)
 
 </br>
 
