@@ -233,23 +233,18 @@ public Page<Post> findAllByTagName(String tagName, Pageable pageable) {
         셋째. 해당 멤버의 게시글 수 내림차순
         
         - 위의 세가지 기준을 세우고 질의문을 수정하였습니다.
-        
-        <details>
-        	<summary> 기존 코드 </summary>
-            <div markdown="1">
+       
                 
-                ```sql
-                SELECT * 
-                FROM (SELECT MEMBER_NICKNAME , MEMBER_PROFILE_IMG, 
-                        (SELECT COUNT(*) FROM BOARD B WHERE MEMBER_NO = m.MEMBER_NO) BOARD_COUNT,
-                    FROM "MEMBER" M
-                    WHERE  M.MEMBER_NO != 1
-                    ORDER BY LIKE_COUNT DESC, FOLLOW_COUNT DESC, BOARD_COUNT DESC)
-                WHERE ROWNUM
-                ```
+        ```sql
+        SELECT * 
+        FROM (SELECT MEMBER_NICKNAME , MEMBER_PROFILE_IMG, 
+                (SELECT COUNT(*) FROM BOARD B WHERE MEMBER_NO = m.MEMBER_NO) BOARD_COUNT,
+            FROM "MEMBER" M
+            WHERE  M.MEMBER_NO != 1
+            ORDER BY LIKE_COUNT DESC, FOLLOW_COUNT DESC, BOARD_COUNT DESC)
+        WHERE ROWNUM
+        ```
                 
-            </div>
-        </details>
     </div>
 </details>
 
