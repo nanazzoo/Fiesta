@@ -212,9 +212,9 @@ public Page<Post> findAllByTagName(String tagName, Pageable pageable) {
 ## 6. 그 외 트러블 슈팅
 
 [추천 멤버 선정 기준 수정](troubleshooting/추천 멤버 선정 기준.md)
-
+[추천 멤버 선정 기준 수정](troubleshooting/추천 멤버 선정 기준.md)[추천 멤버 선정 기준 수정](troubleshooting/추천 멤버 선정 기준.md)
     
-
+[추천 멤버 선정 기준 수정](troubleshooting/추천 멤버 선정 기준.md)
 </br>
 
 ## 6. 회고 / 느낀점
