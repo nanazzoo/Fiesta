@@ -210,37 +210,9 @@ public Page<Post> findAllByTagName(String tagName, Pageable pageable) {
 </br>
 
 ## 6. 그 외 트러블 슈팅
+  
 [추천 멤버 선정 기준](/troubleshooting/추천 멤버 선정 기준.md)
 
-
-<details> 
-    <summary>추천 멤버 선정 기준</summary>
-    <div markdown="1"> 
-    	 - 메인 페이지에 보여지는 추천 멤버의 선정 기준을 기존에는 작성 게시물 수 순으로 선정하였는데, 작성 게시물 수 순으로 했을 때 게시물의 질적 가치를 평가할 수 없어 선정 기준이 부적합하다고 느꼈습니다.
-
-        - 그래서 선정 기준을 세가지 기준으로 압축하여 중요도 순으로 정렬하기로 했습니다. 
-        
-        첫째. 해당 멤버가 받은 좋아요 수 내림차순
-        둘째. 해당 멤버의 팔로워 수 내림차순
-        셋째. 해당 멤버의 게시글 수 내림차순
-        
-        - 위의 세가지 기준을 세우고 질의문을 수정하였습니다.
-       
-                
-        ```sql
-        SELECT * 
-        FROM (SELECT MEMBER_NICKNAME , MEMBER_PROFILE_IMG, 
-                (SELECT COUNT(*) FROM BOARD B WHERE MEMBER_NO = m.MEMBER_NO) BOARD_COUNT,
-            FROM "MEMBER" M
-            WHERE  M.MEMBER_NO != 1
-            ORDER BY LIKE_COUNT DESC, FOLLOW_COUNT DESC, BOARD_COUNT DESC)
-        WHERE ROWNUM
-        ```
-                
-    </div>
-</details>
-
- 
     
 
 </br>
