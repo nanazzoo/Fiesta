@@ -210,15 +210,7 @@ public Page<Post> findAllByTagName(String tagName, Pageable pageable) {
 </br>
 
 ## 6. 그 외 트러블 슈팅
-<details>
-<summary>추천멤버 선택 방식</summary>
-<div markdown="1">
-
-- Webpack-dev-server 버전을 3.0.0으로 다운그레이드로 해결
-- `$ npm install —save-dev webpack-dev-server@3.0.0`
-
-</div>
-</details>
+[추천 멤버 선정 기준](/troubleshooting/추천 멤버 선정 기준.md)
 
 
 <details> 
