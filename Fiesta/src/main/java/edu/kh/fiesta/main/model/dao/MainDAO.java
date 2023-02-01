@@ -23,7 +23,7 @@ public class MainDAO {
 
 
 	/**
-	 * 팔로잉 멤버 게시글 수 조회
+	 * 게시물 수 조회
 	 * @param memberNo
 	 * @return listCount
 	 */
@@ -33,23 +33,25 @@ public class MainDAO {
 	}
 	
 	
-	/** 팔로잉 멤버 게시글 조회 DAO
-	 * @param selectBoardSql
-	 * @return
+
+	/**게시물 목록 조회 DAO
+	 * @param pagination
+	 * @param memberNo
+	 * @return boardList
 	 */
 	public List<Board> selectBoardList(Pagination pagination, int memberNo) {
 		
+		// 조회해 올 게시물의 시작 번호 
 		int offset = (pagination.getCurrentPage() - 1) * pagination.getLimit();
 		
+		// 조회해 올 행의 영역을 설정하는 객체 생성
 		RowBounds rowBounds = new RowBounds(offset, pagination.getLimit());
 	
-
-		
 		return sqlSession.selectList("mainMapper.selectBoardList", memberNo, rowBounds);
 	}
 
 
-	/** 게시글 좋아요 증가
+	/** 寃뚯떆湲� 醫뗭븘�슂 利앷�
 	 * @param boardNo
 	 * @param memberNo
 	 * @return result
@@ -70,7 +72,7 @@ public class MainDAO {
 	}
 
 
-	/** 게시글 좋아요 감소
+	/** 寃뚯떆湲� 醫뗭븘�슂 媛먯냼
 	 * @param boardNo
 	 * @param memberNo
 	 * @return result
@@ -90,7 +92,7 @@ public class MainDAO {
 	}
 
 
-	/** 게시글 북마크 추가
+	/** 寃뚯떆湲� 遺곷쭏�겕 異붽�
 	 * @param boardNo
 	 * @param memberNo
 	 * @return result
@@ -103,7 +105,7 @@ public class MainDAO {
 		return sqlSession.insert("mainMapper.boardBookmarkOn", map);
 	}
 	
-	/** 게시글 북마크 해제
+	/** 寃뚯떆湲� 遺곷쭏�겕 �빐�젣
 	 * @param boardNo
 	 * @param memberNo
 	 * @return result
@@ -118,7 +120,7 @@ public class MainDAO {
 
 	
 	/**
-	 * 게시글 삭제
+	 * 寃뚯떆湲� �궘�젣
 	 * @param boardNo
 	 * @return result
 	 */
@@ -127,7 +129,7 @@ public class MainDAO {
 	}
 
 
-	/** 신고 삽입
+	/** �떊怨� �궫�엯
 	 * @param report
 	 * @return
 	 */
