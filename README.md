@@ -74,7 +74,9 @@
 
 
 
-### 4.3. Controller![controller](C:\Users\bboya\OneDrive\바탕 화면\controller.png)
+### 4.3. Controller
+
+<img src="/controller.png">
 
 - 요청 처리
   - Controller에서 화면 단에서 넘어온 요청을 Service 계층에 위임합니다.
