@@ -63,16 +63,21 @@
 
 
 
+</br></br>
+
 ### 4.1. 전체 흐름
   
 <img src="/spring.png">
 
+
+</br></br>
 
 ### 4.2. 사용자 요청
 
 - 사용자가 로그인을 하면 메인 페이지로 Redirect 합니다.
 
 
+</br></br>
 
 ### 4.3. Controller
 
@@ -84,6 +89,7 @@
   - Service 계층에서 넘어온 결과(map)을 model에 저장한 후 메인 페이지로 Forward 합니다.
 
 
+</br></br>
 
 ### 4.4. Service
   
@@ -97,6 +103,8 @@
   - Pagination 객체와 회원 번호를 매개변수로 하여 게시물 목록을 조회합니다.
 
 
+</br></br>
+
 
 ### 4.5. Repository
 
@@ -107,6 +115,7 @@
 - mapper를 호출합니다.
 
 
+</br></br>
 
 ### 4.6. Mapper
 
@@ -117,8 +126,11 @@
 - 조회해 온 게시물은 다시 Repository - Service - Controller를 거쳐 화면에 출력 됩니다.
 
 
+</br></br>
 </div>
 </details>
+
+</br></br>
 
 </br></br>
 
