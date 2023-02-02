@@ -27,18 +27,19 @@ public class MainServiceImpl implements MainService {
 	@Override
 	public Map<String, Object> selectBoardList(int memberNo) {
 		
-		
+		// 추천 멤버 목록 조회
 		List<Member> accountList = dao.selectMember(memberNo);
 		
-		
+		// 조회할 게시글의 수 조회
 		int listCount = dao.getListCount(memberNo);	
 		
-		
+		// 페이지네이션 객체 생성
 		Pagination pagination = new Pagination(listCount, 1);
 		
-		
+		// 게시물 목록 조회
 		List<Board> boardList = dao.selectBoardList(pagination, memberNo);
-				
+		
+		
 		Map<String, Object> map = new HashMap<String, Object>();
 		
 		map.put("pagination", pagination);
@@ -84,7 +85,7 @@ public class MainServiceImpl implements MainService {
 		return dao.boardLikeDown(boardNo, memberNo);
 	}
 	
-	/** 게시글 북마크 추가
+	/** 寃뚯떆湲� 遺곷쭏�겕 異붽�
 	 *
 	 */
 	@Override
@@ -92,7 +93,7 @@ public class MainServiceImpl implements MainService {
 		return dao.boardBookmarkOn(boardNo, memberNo);
 	}
 	
-	/** 게시글 북마크 해제
+	/** 寃뚯떆湲� 遺곷쭏�겕 �빐�젣
 	 *
 	 */
 	@Override
@@ -102,7 +103,7 @@ public class MainServiceImpl implements MainService {
 
 
 	/**
-	 * 게시글 삭제
+	 * 寃뚯떆湲� �궘�젣
 	 * @param boardNo
 	 * @return result
 	 */
@@ -110,7 +111,7 @@ public class MainServiceImpl implements MainService {
 		return dao.deleteBoard(boardNo);
 	}
 	
-	/** 신고 삽입
+	/** �떊怨� �궫�엯
 	 *
 	 */
 	@Override

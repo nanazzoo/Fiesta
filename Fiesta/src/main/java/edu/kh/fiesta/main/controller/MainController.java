@@ -33,13 +33,16 @@ public class MainController {
 	@GetMapping("/main")
 	public String main(@SessionAttribute("loginMember") Member loginMember, Model model) {
 		
-		
+		// 로그인 한 회원 번호 얻어오기
 		int memberNo= loginMember.getMemberNo();
 		
+		// 로그인 한 회원이 팔로우한 회원 및 해시태그 관련 게시물 목록 조회
 		Map<String, Object> map = service.selectBoardList(memberNo);
 				
+		// request 영역에 조회해온 게시물 목록 저장
 		model.addAttribute("map", map);
 		
+		// 메인 페이지로 forward
 		return "feed/main";
 	} 
 	
@@ -114,7 +117,7 @@ public class MainController {
 			
 			path = referer;
 			
-			ra.addFlashAttribute("message", "신고되었습니다.");
+			ra.addFlashAttribute("message", "�떊怨좊릺�뿀�뒿�땲�떎.");
 			
 		}
 	
