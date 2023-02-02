@@ -40,7 +40,7 @@
 </br></br>
 
 ## 3. ERD 설계
-<img src="/Copy of SNS 프로젝트.png">
+<img src="/SNS 프로젝트.png">
 
 </br></br>
 
