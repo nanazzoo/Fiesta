@@ -1,6 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=Waving&color=timeGradient&height=250&section=header&text=Fiesta&fontSize=60&animation=twinkling&fontColor=ffffff&fontAlign=80)
 
 # :pushpin: [Fiesta](http://146.56.188.235:8080/)
+
 >SNS(Instagram)을 벤치마킹하여 Fiesta만의 고유의 색을 담은 SNS 페이지로 재해석하였다.
 >
 >[Fiesta Demo 바로가기](http://146.56.188.235:8080/)
@@ -10,32 +11,38 @@
 </br>
 
 ## 1. 제작 기간 & 참여 인원
+
 - 2022년 10월 18일 ~ 12월 10일
 - 5인 팀 프로젝트
 - **역할**: **팀장**(프론트, 백엔드)
 - **구현 기능**
-   - 게시글 상세 조회 및 삭제
-   - 좋아요, 북마크
-   - 댓글 작성 및 삭제(대댓글)
-   - 좋아요 수 숨기기, 댓글 기능 사용 안함
-   - 언급 및 해시태그 자동 완성
-   - 신고, 해당 게시물로 이동, 링크 복사 등
-   - 웹소켓을 이용한 알림 기능 구현
+  - 게시글 상세 조회 및 삭제
+  - 좋아요, 북마크
+  - 댓글 작성 및 삭제(대댓글)
+  - 좋아요 수 숨기기, 댓글 기능 사용 안함
+  - 언급 및 해시태그 자동 완성
+  - 신고, 해당 게시물로 이동, 링크 복사 등
+  - 웹소켓을 이용한 알림 기능 구현
 - **기여도**: 설계 단계에서 DB, 화면 구현 부분에 적극적으로 참여하여 설계를 주도하였고 
-         백엔드 부분에서 팀원이 어려워 하는 부분을 도와주거나 함께 해결해 주었습니다.
-
+      백엔드 부분에서 팀원이 어려워 하는 부분을 도와주거나 함께 해결해 주었습니다.
+- **성과**: 
+  - 웹소켓의 사용방법에 대하여 배울 수 있었습니다.
+  - 비동기 무한 스크롤을 구현할 수 있게 되었습니다.
+  - 정규표현식을 사용하여 단어를 추출하여 자동완성하는 기능을 구현할 수 있게 되었습니다.
 
 </br></br>
 
 
 </br></br>
 
-  
+
 ## 2. 사용 기술
 
 <div align="center">
-  
+
+
 ### **Back-end**
+
 <img src="https://img.shields.io/badge/Java11-007396?style=for-the-badge&logo=java&logoColor=white"> 
   <img src="https://img.shields.io/badge/Spring5.3.14-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
   <img src="https://img.shields.io/badge/Oracle21C-F80000?style=for-the-badge&logo=oracle&logoColor=white">
@@ -45,6 +52,7 @@
     <img src="https://img.shields.io/badge/Spring Sequrity-6DB33F?style=for-the-badge&logo=SpringSecurity&logoColor=white">
 
 ### **Front-end**
+
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
@@ -74,10 +82,11 @@
 
 
 
+
 </br></br>
 
 ### 4.1. 전체 흐름
-  
+
 <img src="/spring.png">
 
 
@@ -103,7 +112,7 @@
 </br></br>
 
 ### 4.4. Service
-  
+
 <img src="/service.png">
 
 
@@ -112,7 +121,6 @@
   - 게시물 수와 현재 페이지 번호를 매개변수로 하여 Pagination 객체를 생성합니다.
   - 여기서 현재 페이지가 1로 고정된 것은 JSP를 통해서 보여질 페이지만 불러오기 때문입니다.
   - Pagination 객체와 회원 번호를 매개변수로 하여 게시물 목록을 조회합니다.
-
 
 </br></br>
 
@@ -125,7 +133,6 @@
 - mybatis의 기능을 이용하기 위해 rowBounds 객체를 생성하고 
 - mapper를 호출합니다.
 
-
 </br></br>
 
 ### 4.6. Mapper
@@ -135,7 +142,6 @@
 - 로그인 한 사용자의 메인 페이지에 출력할 게시물을 불러오는 SQL문 입니다.
 - 사용자가 팔로우한 회원 및 팔로우한 해시태그 연관 게시물을 불러옵니다.
 - 조회해 온 게시물은 다시 Repository - Service - Controller를 거쳐 화면에 출력 됩니다.
-
 
 </br></br>
 </div>
